@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: Check for newer workflow
-          command: bash autocancel.sh
+          command: bash ./.circleci/autocancel.sh
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
