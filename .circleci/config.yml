@@ -30,7 +30,6 @@ jobs:
       - checkout
       - run:
           name: Check for newer workflow
-          background: true
           command: bash autocancel.sh
 
 # Orchestrate jobs using workflows
@@ -40,6 +39,6 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - sniff_for_changes
-      - say-hello
-        requires:
-          - sniff_for_changes
+      - say-hello:
+          requires:
+            - sniff_for_changes
