@@ -21,7 +21,7 @@ jobs:
       - run:
           name: "Say hello"
           command: |
-            sleep 20
+            sleep 30
             echo Hello, World!
   sniff_for_changes:
     docker:
@@ -31,15 +31,7 @@ jobs:
       - run:
           name: Check for newer workflow
           background: true
-          command: |
-            while true; do
-              sleep 5
-              LATEST_COMMIT=$(git ls-remote $CIRCLE_REPOSITORY_URL | grep $CIRCLE_BRANCH | cut -f 1)
-              if [ "$LATEST_COMMIT" != "$CIRCLE_SHA1" ]; then
-                echo "more recent commit to branch, exiting"
-                curl -X POST "https://circleci.com/api/v2/workflow/$CIRCLE_WORKFLOW_ID/cancel?circle-token=$CIRCLE_API_TOKEN"
-              fi
-            done
+          command: bash autocancel.sh
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
@@ -49,3 +41,5 @@ workflows:
     jobs:
       - sniff_for_changes
       - say-hello
+        requires:
+          - sniff_for_changes
