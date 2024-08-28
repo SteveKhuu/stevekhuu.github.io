@@ -26,7 +26,11 @@ jobs:
       - checkout
       - run:
           name: Check for newer workflow
-          command: bash ./.circleci/autocancel.sh
+          command: command: |
+            if [[ "$CIRCLE_BRANCH" != "main" ]]; then
+              echo "Cancelling other running builds for branch $CIRCLE_BRANCH"
+              bash ./.circleci/autocancel.sh
+            fi
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
