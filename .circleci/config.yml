@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Say hello"
           command: |
-            sleep 30
+            sleep 60
             echo Hello, World!
   sniff_for_changes:
     docker:

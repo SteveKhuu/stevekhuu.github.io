@@ -33,6 +33,13 @@ if [ -s WF_to_cancel.txt ]; then
     done < WF_to_cancel.txt
   ## Allowing some time to complete the cancellation
   sleep 2
-  else
-    echo "Nothing to cancel"
+
+  # Rerun the current workflow so that the cancelled workflow does not stay published
+  curl --request POST \
+    --url https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID} \
+    --header "Circle-Token: $CIRCLE_API_TOKEN" \
+    --header 'content-type: application/json' \
+    --data '{"enable_ssh":false,"from_failed":false'
+else
+  echo "Nothing to cancel"
 fi
