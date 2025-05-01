@@ -10,7 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  basePath: "/stevekhuu.github.io",
+  // basePath: "/",
   images: {
     unoptimized: true,
   },
