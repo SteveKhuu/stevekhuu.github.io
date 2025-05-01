@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Briefcase, ExternalLink, Github, Linkedin, Mail, ChevronRight, Users, Building, Mic } from "lucide-react"
+import { Banknote, Smile, ExternalLink, Github, Linkedin, Send, ChevronRight, Users, Building } from "lucide-react"
 
 export default function Portfolio() {
   return (
@@ -16,7 +16,7 @@ export default function Portfolio() {
             <div className="flex-1 space-y-4">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter">Steve Khuu</h1>
               <p className="text-xl text-gray-500 dark:text-gray-400 max-w-[600px]">
-                Engineering Leader & Coach | Transforming teams and infrastructure at scale
+                Engineering Leader & Coach | Transforming teams at scale
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="https://github.com/stevekhuu" target="_blank" rel="noopener noreferrer">
@@ -31,17 +31,17 @@ export default function Portfolio() {
                     LinkedIn
                   </Button>
                 </Link>
-                <Link href="mailto:contact@stevekhuu.com">
+                <Link href="https://t.me/stevekhuu">
                   <Button variant="outline" size="sm">
-                    <Mail className="h-4 w-4 mr-2" />
-                    Email
+                    <Send className="h-4 w-4 mr-2" />
+                    Telegram
                   </Button>
                 </Link>
               </div>
             </div>
             <div className="relative w-[280px] h-[280px] rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
               <Image
-                src="/placeholder.svg?height=280&width=280"
+                src="/photo.jpg?height=280&width=280"
                 alt="Steve Khuu"
                 width={280}
                 height={280}
@@ -59,6 +59,13 @@ export default function Portfolio() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <Card className="bg-gray-50 dark:bg-gray-900 border-0">
               <CardContent className="flex flex-col items-center justify-center p-6">
+                <Banknote className="h-8 w-8 mb-2 text-primary" />
+                <h3 className="text-3xl font-bold">$2B+</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">New $ARR Created</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-gray-50 dark:bg-gray-900 border-0">
+              <CardContent className="flex flex-col items-center justify-center p-6">
                 <Users className="h-8 w-8 mb-2 text-primary" />
                 <h3 className="text-3xl font-bold">100+</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Professionals Coached</p>
@@ -67,22 +74,15 @@ export default function Portfolio() {
             <Card className="bg-gray-50 dark:bg-gray-900 border-0">
               <CardContent className="flex flex-col items-center justify-center p-6">
                 <Building className="h-8 w-8 mb-2 text-primary" />
-                <h3 className="text-3xl font-bold">5+</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Fortune 500 Companies</p>
+                <h3 className="text-3xl font-bold">20+</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Companies Advised</p>
               </CardContent>
             </Card>
             <Card className="bg-gray-50 dark:bg-gray-900 border-0">
               <CardContent className="flex flex-col items-center justify-center p-6">
-                <Mic className="h-8 w-8 mb-2 text-primary" />
-                <h3 className="text-3xl font-bold">10+</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Conference Talks</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-50 dark:bg-gray-900 border-0">
-              <CardContent className="flex flex-col items-center justify-center p-6">
-                <Briefcase className="h-8 w-8 mb-2 text-primary" />
-                <h3 className="text-3xl font-bold">X</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">EV Stations Deployed</p>
+                <Smile className="h-8 w-8 mb-2 text-primary" />
+                <h3 className="text-3xl font-bold">∞</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Happy Moments</p>
               </CardContent>
             </Card>
           </div>
@@ -95,39 +95,43 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Career Highlights</h2>
           <Tabs defaultValue="ford" className="w-full">
             <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-8">
-              <TabsTrigger value="ford">Ford</TabsTrigger>
-              <TabsTrigger value="facebook">Facebook</TabsTrigger>
+              <TabsTrigger value="homebase">Homebase</TabsTrigger>
               <TabsTrigger value="shopify">Shopify</TabsTrigger>
+              <TabsTrigger value="ford">Ford</TabsTrigger>
               <TabsTrigger value="coaching">Coaching</TabsTrigger>
             </TabsList>
-            <TabsContent value="ford" className="space-y-4">
+            <TabsContent value="homebase" className="space-y-4">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Transforming EV Infrastructure</h3>
+                  <h3 className="text-xl font-bold mb-2">Leading Fintech Scaling</h3>
                   <p className="text-gray-500 dark:text-gray-400 mb-4">
-                    Led the transformation of Ford's electric vehicle infrastructure, implementing innovative solutions
-                    that improved efficiency and scalability.
+                    Over 4% of American households-representing more than 5.6 million families-remain unbanked, 
+                    while more than half are unable to afford a $400 emergency expense, highlighting persistent disparities 
+                    in financial access and security. 
+                    <br />
+                    <br />
+                    To address this gap, I led the development and scaling of Homebase Cash Out, 
+                    an earned wage access solution that empowers employees to access their pay as they earn it, 
+                    reducing reliance on predatory lending and providing critical financial flexibility. 
+                    <br />
+                    <br />
+                    From a hackathon project with 0 users, we enrolled over 900,000 users, advanced $1 billion in funds, and increased average employee retention by over six months
+                    Leveraging machine learning, we optimized risk management and profitability in a high-risk environment, 
+                    ensuring sustainable growth while delivering a vital benefit to underserved workers.
+                    <br />
+                    <br />
+                    <Link 
+                      href="https://www.joinhomebase.com/cashout" 
+                      target="_blank"
+                      className="text-blue-600 dark:text-blue-500 hover:underline"
+                      rel="noopener noreferrer">
+                        Learn more here
+                    </Link>
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>EV Technology</Badge>
-                    <Badge>Infrastructure</Badge>
-                    <Badge>Leadership</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="facebook" className="space-y-4">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Strategic Consulting</h3>
-                  <p className="text-gray-500 dark:text-gray-400 mb-4">
-                    Provided expert consulting services to Facebook, helping to optimize processes and implement best
-                    practices for engineering teams.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>Consulting</Badge>
-                    <Badge>Process Optimization</Badge>
-                    <Badge>Engineering Excellence</Badge>
+                    <Badge>Fintech</Badge>
+                    <Badge>Machine Learning</Badge>
+                    <Badge>Operational Excellence</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -135,15 +139,63 @@ export default function Portfolio() {
             <TabsContent value="shopify" className="space-y-4">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Engineering Leadership</h3>
+                  <h3 className="text-xl font-bold mb-2">Brick-and-Mortar Breakthrough</h3>
                   <p className="text-gray-500 dark:text-gray-400 mb-4">
-                    Drove key initiatives at Shopify, focusing on scaling engineering practices and mentoring teams to
-                    achieve exceptional results.
+                    Shopify built its reputation empowering online entrepreneurs, but brick-and-mortar businesses faced unique challenges that existing tools couldn’t solve. 
+                    As the founding engineering leader for Shopify POS Pro, I architected and launched a comprehensive, 
+                    feature-rich solution designed specifically for physical retailers-covering everything from intuitive onboarding and staff education to seamless in-store interactions. 
+                    <br/>
+                    <br/>
+                    This new business line enabled brick-and-mortar merchants to operate out-of-the-box, 
+                    bridging the gap between digital and physical commerce. In just two years, POS Pro scaled to over $100 million in annual recurring revenue, with more than $20 million ARR in its first year, 
+                    and today represents roughly 1% of Shopify's total revenue. This product not only expanded Shopify's market reach but also established a new standard for unified commerce, 
+                    empowering thousands of local businesses to thrive in an omnichannel world
                   </p>
+                  <Link 
+                    href="https://www.shopify.com/ca/pos/pricing" 
+                    target="_blank"
+                    className="text-blue-600 dark:text-blue-500 hover:underline"
+                    rel="noopener noreferrer">
+                      Learn more here
+                  </Link>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>Team Leadership</Badge>
-                    <Badge>Scaling</Badge>
-                    <Badge>Mentorship</Badge>
+                    <Badge>Product Leadership</Badge>
+                    <Badge>Small Businesses</Badge>
+                    <Badge>Market-expanding</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="ford" className="space-y-4">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Transforming EV Infrastructure</h3>
+                  <p className="text-gray-500 dark:text-gray-400 mb-4">
+                    Ford set out to build a digital marketplace for telematics and connected vehicle services, 
+                    but the project quickly evolved into a foundational platform that transformed the company's 
+                    approach to software and electrification. 
+                    <br />
+                    <br />
+                    By integrating software update capabilities directly into the assembly line and 
+                    enabling over-the-air updates across the fleet, 
+                    I helped architect the network that now powers Ford's digital product ecosystem. 
+                    <br />
+                    <br />
+                    This infrastructure not only allowed for seamless distribution of new features and services to all vehicles-including third-party 
+                    makes-but also became the critical enabler for Ford's electric vehicle (EV) strategy. Without this unified digital backbone, Ford's rapid EV innovation and market expansion would not have been possible, 
+                    positioning the company as a leader in connected and electrified mobility.
+                  </p>
+                  <Link 
+                    href="https://www.fordpro.ca/en-ca/intelligence/" 
+                    target="_blank"
+                    className="text-blue-600 dark:text-blue-500 hover:underline"
+                    rel="noopener noreferrer">
+                      Learn more here
+                  </Link>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge>EV Technology</Badge>
+                    <Badge>Infrastructure</Badge>
+                    <Badge>Digital Transformation</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -153,8 +205,17 @@ export default function Portfolio() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">Professional Coaching</h3>
                   <p className="text-gray-500 dark:text-gray-400 mb-4">
-                    Coached hundreds of professionals across various industries, helping them develop leadership skills
-                    and advance their careers.
+                    As a coach, I’ve empowered executives and founders across private equity and VC-backed companies-from pre-seed startups to post-Series A 
+                    scale-ups-to build resilient, high-performing organizations. 
+                    <br/>
+                    <br/>
+                    I’ve guided businesses through the unprecedented challenges of COVID, 
+                    helped leaders scale talent and nurture future leaders, and supported individuals in achieving career breakthroughs, 
+                    from promotions and entrepreneurship to landing their first tech jobs in Canada. 
+                    <br/>
+                    <br/>
+                    Whether assisting professionals in transitioning into tech or helping those on performance improvement plans regain their footing, 
+                    my coaching focuses on unlocking potential, driving growth, and enabling lasting success at every stage of the journey.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>Career Development</Badge>
@@ -171,13 +232,13 @@ export default function Portfolio() {
       {/* Featured Project */}
       <section className="py-16 bg-white dark:bg-gray-800">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Featured Project</h2>
+          <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Resources for Aspiring Leaders</h2>
           <Card className="overflow-hidden border-0 shadow-lg">
             <div className="md:grid md:grid-cols-2">
               <div className="bg-gray-100 dark:bg-gray-900 p-6 flex items-center justify-center">
                 <div className="relative w-full h-[240px]">
                   <Image
-                    src="/placeholder.svg?height=240&width=400"
+                    src="/Engineering_Manager_Toolkit.png?height=240&width=400"
                     alt="EM Toolkit Preview"
                     fill
                     className="object-contain"
@@ -383,9 +444,9 @@ export default function Portfolio() {
             engineering leadership, I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="mailto:contact@stevekhuu.com">
+            <Link href="https://t.me/stevekhuu">
               <Button variant="secondary" size="lg">
-                Send an Email
+                Send me a Telegram
               </Button>
             </Link>
             <Link href="https://www.linkedin.com/in/stevekhuu/" target="_blank" rel="noopener noreferrer">
@@ -416,8 +477,8 @@ export default function Portfolio() {
               <Link href="https://www.linkedin.com/in/stevekhuu/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300" />
               </Link>
-              <Link href="mailto:contact@stevekhuu.com">
-                <Mail className="h-5 w-5 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300" />
+              <Link href="https://t.me/stevekhuu">
+                <Send className="h-5 w-5 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300" />
               </Link>
             </div>
           </div>
