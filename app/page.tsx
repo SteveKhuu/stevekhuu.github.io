@@ -115,7 +115,7 @@ export default function Portfolio() {
                     reducing reliance on predatory lending and providing critical financial flexibility. 
                     <br />
                     <br />
-                    From a hackathon project with 0 users, we enrolled over 900,000 users, advanced $1 billion in funds, and increased average employee retention by over six months
+                    From a hackathon project with 0 users, we enrolled over 900,000 users, advanced $1 billion in funds, and increased average employee retention by over six months.
                     Leveraging machine learning, we optimized risk management and profitability in a high-risk environment, 
                     ensuring sustainable growth while delivering a vital benefit to underserved workers.
                     <br />
@@ -423,6 +423,12 @@ export default function Portfolio() {
                 </h3>
                 <div className="space-y-4">
                   <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-3">
+                    <h4 className="font-medium mb-1">Growth Engineering</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      I help companies uncover their distinctive strengths and systematically build on them to drive meaningful, exponential growth over the long term.
+                    </p>
+                  </div>
+                  <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-3">
                     <h4 className="font-medium mb-1">Systems Thinking</h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       I approach complex problems by understanding the entire system rather than isolated components,
@@ -434,13 +440,6 @@ export default function Portfolio() {
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       My leadership style focuses on removing obstacles for my team and creating an environment where
                       everyone can do their best work.
-                    </p>
-                  </div>
-                  <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-3">
-                    <h4 className="font-medium mb-1">Continuous Improvement</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      I implement regular retrospectives and feedback loops to ensure teams and processes are constantly
-                      evolving and improving.
                     </p>
                   </div>
                 </div>
