@@ -43,7 +43,7 @@ export default function Portfolio() {
             </div>
             <div className="relative w-[280px] h-[280px] rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
               <Image
-                src="/photo.jpg?height=280&width=280"
+                src="/photo_800x800.jpg?height=280&width=280"
                 alt="Steve Khuu"
                 width={280}
                 height={280}
