@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Banknote, Smile, ExternalLink, Github, Linkedin, Send, ChevronRight, Users, Building } from "lucide-react"
 import { GoogleAnalytics } from "@/components/ui/google-analytics"
+import { Suspense } from "react"
 
 export default function Portfolio() {
   return (
@@ -500,7 +501,9 @@ export default function Portfolio() {
         </div>
       </footer>
 
-      <GoogleAnalytics/>
+      <Suspense fallback={<>Loading...</>}>
+        <GoogleAnalytics/>
+      </Suspense>
     </div>
   )
 }
