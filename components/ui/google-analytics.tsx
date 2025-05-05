@@ -5,7 +5,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 
 // Replace with your Google Analytics measurement ID
-const GA_MEASUREMENT_ID = "7CSW6JGYJZ"
+const GA_MEASUREMENT_ID = "G-7CSW6JGYJZ"
 
 // Log page views
 export const pageview = (url: string) => {
