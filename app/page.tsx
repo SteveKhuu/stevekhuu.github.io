@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Banknote, Smile, ExternalLink, Github, Linkedin, Send, ChevronRight, Users, Building } from "lucide-react"
+import { GoogleAnalytics } from "@/components/ui/google-analytics"
 
 export default function Portfolio() {
   return (
@@ -498,6 +499,8 @@ export default function Portfolio() {
           </div>
         </div>
       </footer>
+
+      <GoogleAnalytics/>
     </div>
   )
 }
