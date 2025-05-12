@@ -330,7 +330,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <Link 
-                        href="https://www.amazon.ca/Measure-What-Matters-John-Doerr/dp/024134848X/ref=sr_1_1?crid=2NMXP7IJIRO3M&keywords=measure+what+matters&qid=1675978024&sprefix=Measure+What+Matters,aps,90&sr=8-1"
+                        href="https://amzn.to/3ZdNelM"
                         target="_blank"
                         >
                         <h4 className="font-medium">Measure What Matters</h4>
@@ -358,7 +358,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <Link 
-                        href="https://www.amazon.ca/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/ref=sr_1_1?crid=F6MNZZUYF1ZU&keywords=Continuous+Discovery+Habits&qid=1675978038&sprefix=continuous+discovery+habits%2Caps%2C91&sr=8-1"
+                        href="https://amzn.to/3GRItIp"
                         target="_blank"
                         >
                         <h4 className="font-medium">Continous Discovery Habits</h4>
@@ -386,7 +386,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <Link 
-                        href="https://www.amazon.ca/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756/ref=sr_1_1?crid=3HIBN6W3IM9UT&dib=eyJ2IjoiMSJ9.m-S3In8lXHSPxHFwaOT8Tc02zw7IcGxTr1PqQzSdt5Y_l10GKLw6kWlFSp3_oeB_0tOEKiRPTAiC_FWeDi5B_iWkht7bCd31j7F2ALrdNPGUEZEXRM59cqFYbxMfqNqyhMRwds52sjv14F7trWWLmnWaBifa5j7uW2AC_29zeT8NtZCBiSgx53EcBMRCccHr7DOAzagcK2LY92Y8gnyMHPcFBRIA8tsr_y3jp-G4sRHjh5ofjh-xcxrLDR3I-0-c5ooRw5ouea6HWBhkXqadto6jbEr91FYukbCE7tplGF4.9ISQam2irYkglkH3p0Cb4-ZNCFPjexsSeLI00ukox-U&dib_tag=se&keywords=five+dysfunctions&qid=1746128447&sprefix=fiev+dysfunctions%2Caps%2C81&sr=8-1"
+                        href="https://amzn.to/3SkEE17"
                         target="_blank"
                         >
                           <h4 className="font-medium">Five Dysfunctions of a Team</h4>
